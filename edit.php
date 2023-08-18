@@ -29,7 +29,7 @@
         $stock = $_POST['stock'];
         $date = $_POST['date'];
 
-        $query = "UPDATE books set title = '$title', description = '$description',editorial = '$editorial', gender = '$gender', language = '$language', isbn = '$isbn', stock = '$stock', date = '$date', WHERE id = $id ";
+        $query = "UPDATE books set title = '$title', description = '$description',editorial = '$editorial', gender = '$gender', language = '$language', isbn = '$isbn', stock = '$stock', date = '$date' WHERE id = $id ";
         mysqli_query($conn, $query);
 
         $_SESSION['message'] = 'Book Updated Successfully';
